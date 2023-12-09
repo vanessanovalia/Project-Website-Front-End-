@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RESTAURANT</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+	<link rel="stylesheet" href="style.css">
+    
+	<script type="text/javascript" src="jquery-3.6.0.min.js"> </script>
+
+</head>
+<body>
+
+<!-- header -->
+<div class="containerpart">
+<header>
+    <div class="name">
+    	<a href="#" class="logo"> SuperFoodie</a>
+    </div>
+
+	<nav class="navbar">
+		<a class="active" href="#home">home</a>
+		<a href="#speciality"> speciality </a>
+		<a href="#about">about </a>
+		<a href="#menu">menu</a>
+		<a href="#review">review</a>
+		<a href="#team">team</a>
+		<a href="#order">order</a>
+	</nav>
+
+	<div class="icons">
+		<i class="fas fa-bars" id="menu-bars"></i>
+		<i class="fas fa-search" id="search-icon"></i>
+		<a href="#" class="fas fa-heart"></a>
+		<a href="#" class="fas fa-shopping-cart"></a>
+	</div>
+
+	<div class="search-form">
+		<input type="search" id="search-box" placeholder="Search here...">
+		<label for="search-box" class="fas fa-search"></label>
+	</div>
+</header>
+</div>
+
+<!-- home section -->
+<div class="home-bg">
+	<section class="home" id="home">
+		
+		<div class="slide-container">
+
+			<div class="slide active">
+				
+				<div class="content">
+					<h3>Homemade Pizza</h3>
+                    <h4>Made With Love</h4>
+                    <div class="btns">
+                        <a href="#menu" class="btn-menu"> Our Menu </a>
+                        <a href="#order" class="btn-order">Order Now </a>
+                    </div> <br>
+					<div class="fas fa-angle-left" onclick="prev()"></div>
+					<div class="fas fa-angle-right" onclick="next()"></div>
+				</div>
+                <div class="image">
+                    <img src="images/pizzahome.png" alt="pizza" style="padding-bottom: 4.2rem; padding-top: 5rem;">    
+                </div>
+			</div>
+
+			<div class="slide">
+		
+				<div class="content">
+					<h3>Homemade Burger</h3>
+                    <h4>Made With Love</h4>
+                    <div class="btns">
+                        <a href="#menu" class="btn-menu"> Our Menu </a>
+                        <a href="#order" class="btn-order">Order Now </a>
+                    </div> <br>
+					<div class="fas fa-angle-left" onclick="prev()"></div>
+					<div class="fas fa-angle-right" onclick="next()"></div>
+				</div>
+                <div class="image">
+                    <img src="images/burgerhome.png" alt="burger" style="padding-bottom: 5.6rem; padding-top: 5rem;">   
+                </div>
+                
+			</div>
+
+			<div class="slide">
+				
+				<div class="content">
+					<h3>Homemade Sandwich</h3>
+                    <h4>Made With Love</h4>
+                    <div class="btns">
+                        <a href="#menu" class="btn-menu"> Our Menu </a>
+                        <a href="#order" class="btn-order">Order Now </a>
+                    </div> <br>
+					<div class="fas fa-angle-left" onclick="prev()"></div>
+					<div class="fas fa-angle-right" onclick="next()"></div>
+				</div>
+                <div class="image">
+                    <img src="images/sandwichhome.png" alt="sandwich" style="padding-bottom: 7.3rem; padding-top: 5rem;">     
+                </div>
+			</div>
+
+		</div>
+
+	</section>
+</div>
+<!-- home section ends -->
+
+
+<!-- Speciality start -->
+<div class="containerpart">
+	
+	<section class="speciality" id="speciality">
+
+    <h1 class="heading"> today's <span> speciality </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/sandwich1.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Sandwich</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btnspecial">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-1.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Pizza</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btnspecial">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/menu-2.jpg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Burger</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, accusantium.</p>
+                <a href="#" class="btnspecial">add to cart</a>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        </div>
+    </section>
+</div>
+<!-- speciality ends -->
+
+
+<!-- about section start -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> about </span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>best food in the country</h3>
+            <p>... is restaurant that is practically focused on selling breads such as pizza, sandwiches, and burger. Not only that, here we also provide some other snacks and drinks such as coffee.</p>
+            <p> We make everything with the best possible ingredients. So, don't worry about the taste, we guarantee delicious.</p>
+            <div class="icons-container">
+                <div class="icons">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payments</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                </div>
+            </div>
+            <a href="#" class="btnspecial">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- about section ends -->
+
+
+<!-- menu section start -->
+<div class="containerpart">
+    <section class="dish" id="menu" >
+
+    <h1 class="heading"> Our <span>  menu </span> </h1>
+
+    <ul class="controls">
+        <li class="buttons button-active" data-filter="all">all</li>
+        <li class="buttons" data-filter="sandwich">sandwich</li>
+        <li class="buttons" data-filter="pizza">pizza</li>
+        <li class="buttons" data-filter="burger">burger</li>
+        <li class="buttons" data-filter="dessert">dessert</li>
+    </ul>
+
+    <div class="image-container">
+        <!--MENU SANDWICH-->
+        <div class="image sandwich">
+            <img src="images/sandwich tuna.jpg" alt="">
+            <div class="p-4">
+                <div class="name">Tuna sandwich </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.35.000</del> Rp.25.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>      
+            </div> 	
+        </div>
+        <div class="image sandwich">
+            <img src="images/sandwich2.jpg" alt="">
+            <div class="p-4">
+                <div class="name">salad sandwich </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.30.000</del> Rp.20.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image sandwich">
+            <img src="images/sandwich3.jpg" alt="">
+            <div class="p-4">
+                <div class="name">thin sandwich </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.30.000</del> Rp.20.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image sandwich">
+            <img src="images/sandwich4.jpg" alt="">
+            <div class="p-4">
+                <div class="name">thick stuffed sandwich </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.35.000</del> Rp.28.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image sandwich">
+            <img src="images/sandwich5.jpg" alt="">
+            <div class="p-4">
+                <div class="name">double sandwich </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.45.000</del>Rp.37.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image sandwich">
+            <img src="images/sandwich6.jpg" alt="">
+            <div class="p-4">
+                <div class="name">chicken sub sandwich </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>Rp.38.000</del> Rp.25.000</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--MENU PIZZA-->
+        <div class="image pizza">
+            <img src="images/pizza1.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza morazella</div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pizza">
+            <img src="images/pizza2.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza jamur</div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pizza">
+            <img src="images/pizza3.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza fruit</div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pizza">
+            <img src="images/pizza6.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza corn cheese</div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pizza">
+            <img src="images/pizza4.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza with minced beef meet</div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image pizza">
+            <img src="images/pizza5.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pizza tomatto</div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--MENU BURGER-->
+        <div class="image burger">
+            <img src="images/burger1.jpg" alt="">
+            <div class="p-4">
+                <div class="name">chicken burger </div> 
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image burger">
+            <img src="images/burger2.jpg" alt="">
+            <div class="p-4">
+                <div class="name">cheese burger </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image burger">
+            <img src="images/burger3.jpg" alt="">
+            <div class="p-4">
+                <div class="name">beef burger </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image burger">
+            <img src="images/burger4.jpeg" alt="">
+            <div class="p-4">
+                <div class="name">tempeh burger </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image burger">
+            <img src="images/burger5.jpg" alt="">
+            <div class="p-4">
+                <div class="name">veggie burger </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image burger">
+            <img src="images/burger6.jpg" alt="">
+            <div class="p-4">
+                <div class="name">fish burger </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+        <!--MENU DESSERT-->
+        <div class="image dessert">
+            <img src="images/dessert-1.jpg" alt="">
+            <div class="p-4">
+                <div class="name">pancake </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image dessert">
+            <img src="images/dessert-2.jpg" alt="">
+            <div class="p-4">
+                <div class="name">ice croffle </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+        <div class="image dessert">
+            <img src="images/dessert-3.jpg" alt="">
+            <div class="p-4">
+                <div class="name"> chocolate cookies </div>
+                <p>Time : 15-20 Minutes | Serves:1</p>
+                <span> <del>$11.70</del> $10.50</span>
+                <form action="" method="post">
+                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+                    <input type="submit" value="add to cart" name="add_to_cart" class="btnspecial">
+                    <a href="#" class="fas fa-heart"></a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </section>
+</div>
+<!-- menu section ends -->
+
+
+<!-- features section start -->
+<div class="containerpart">
+<section class="features" id="about">
+
+	<h1 class="heading"> Our <span> Features </span></h1>
+	
+	<div class="box-container">
+		<div class="box">
+			<img src="images/about-1.svg" alt="aboutimg">
+			<h3> Fresh & Delicious </h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#menu" class="btn"> Order now </a>
+		</div>
+	
+
+		<div class="box">
+			<img src="images/about-2.svg" alt="aboutimg">
+			<h3> Free & Fast Delivery </h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#menu" class="btn"> Order now </a>
+		</div>
+
+		<div class="box">
+			<img src="images/feature-img-3.png" alt="aboutimg" style="height: 26rem; padding-top: 20px;">
+			<h3> Easy Payment </h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#menu" class="btn"> Order now </a>
+		</div>
+
+	</div>
+</section>
+</div>
+<!-- features section ends -->
+
+
+<!-- review section start -->
+<section id="review">
+        <h1 class="heading">our customers <span>reviews</span></h1>
+        <div class=" wrapper testimonial-section">
+          <div class="container">
+           <div class="row justify-content-center">
+             <div class="col-sm-12 col-lg-10">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img src="images/testi1.jpg" alt="" class="img-fluid">
+                      <p>sandwichnya beneran enak banget, the best deh pokoknya, sangat recommended 👍</p>
+                      <h5>Jonathan Doe-UX Design</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">       
+                    <div class="carousel-caption">
+                      <img src="images/testi2.jpg" alt="" class="img-fluid">
+                      <p>sandwichnya beneran enak banget, the best deh pokoknya, sangat recommended 👍</p>
+                      <h5>Jonathan Doe-UX Design</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/testi3.jpg" alt="" class="img-fluid">
+                      <p>sandwichnya beneran enak banget, the best deh pokoknya, sangat recommended 👍</p>
+                      <h5>Jonathan Doe-UX Design</h5>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+             </div>
+    
+           </div> 
+          </div>
+        </div>
+</section>
+<!-- review section ends -->
+
+
+
+<!-- team section start -->
+<div class="containerpart">
+<section class="team-section" id="team">
+	<div class="container">
+		<h1 class="heading"> OUR <span> Team </span></h1>
+		<div class="row">
+            
+			<div class="team-item">
+				<img src="images/vanessa.jpg" alt="foto1">
+				<div class="team-item-info">
+					<h3>Vanessa Novalia</h3>
+					<p>Founder</p>
+                    <div class="social-icon">
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                        <a href="#"> <i class="fab fa-linkedin"></i></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                    </div>
+				</div>
+			</div>
+			<div class="team-item">
+				<img src="images/1.jpg" alt="foto1">
+				<div class="team-item-info">
+					<h3>Caroline </h3>
+					<p>head chef</p>
+                    <div class="social-icon">
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                        <a href="#"> <i class="fab fa-linkedin"></i></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                      </div>
+				</div>
+			</div>
+
+			<div class="team-item">
+				<img src="images/2.jpg" alt="foto1">
+				<div class="team-item-info">
+					<h3>Jorge Martin</h3>
+					<p>asisten chef</p>
+                    <div class="social-icon">
+                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                        <a href="#"> <i class="fab fa-twitter"></i></a>
+                        <a href="#"> <i class="fab fa-linkedin"></i></a>
+                        <a href="#"> <i class="fab fa-instagram"></i></a>
+                      </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+</div>
+<!-- team section ends -->
+
+
+
+<!-- order section start -->
+<div class="containerpart">
+<section class="order" id="order">
+    <h1 class="heading"> ORDER NOW </h1>
+    <form action="" name="fform">
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your email</span>
+                <input type="text" placeholder="enter your email">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <select name="inama">
+                    <option value="Tuna Sandwich">Tuna Sandwich</option>
+                    <option value="Tuna Sandwich">Tuna Sandwich</option>
+                    <option value="Thin Sandwic">Thin Sandwich</option>
+                    <option value="Thick Stuffed Sandwich">Thick Stuffed Sandwich</option>
+                    <option value="Double Sandwich">Double Sandwich</option>
+                    <option value="Chicken Sub Sandwich">Chicken Sub Sandwich</option>
+                    <option value="Pizza Mozarella">Pizza Mozarella </option>
+                    <option value="Pizza Jamur">Pizza Jamur</option>
+                    <option value="Pizza Fruit">Pizza Fruit </option>
+                    <option value="Pizza Corn Cheese">Pizza Corn Cheese</option>
+                    <option value="Pizza With Minced Beef Meet">Pizza With Minced Beef Meet</option>
+                    <option value="Pizza Tommato">Pizza Tomatto </option>
+                    <option value="Chicken Burger">Chicken Burger</option>
+                    <option value="Cheese Burger">Cheese Burger</option>
+                    <option value="Beef Burger">Beef Burger</option>
+                    <option value="Tempeh Burger">Tempeh Burger</option>
+                    <option value="Veggie Burger">Veggie Burger</option>
+                    <option value="Fish Burger">Fish Burger</option>
+                  </select>
+            </div>
+            <div class="input">
+                <span>how musch</span>
+                <input type="number" name="ijumlah" placeholder="how many orders">
+            </div>
+        </div>
+        <div class="inputBox">
+             <div class="input">
+                <span>additional food</span>
+                <input type="text" placeholder="enter your additional food">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Price</span>
+                <input type="text" placeholder="price" name="oharga"/>
+            </div>
+            <div class="input">
+                <span>Total</span>
+                <input type="text" placeholder="total" name="ototal"/> 
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        
+        <div class="inputBox">
+            <div class="input">
+                <input type="button" value="Process" onclick="hitungtotal()" class="btn"/>
+            </div>
+            <div class="input">
+                <input type="button" value="Order" onclick="" id="btn" class="btn"/>
+             </div>
+        </div>
+    </form>
+
+
+      
+
+      
+
+
+</section>
+</div>
+<!-- order section ends -->
+
+
+<!-- footer section start -->
+<footer class="footer" id="contact">
+      	<div class="box-container">
+          	<div class="mainBox">
+              <div class="content">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3154788033976!2d106.77604031476984!3d-6.353189495402535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eee4c1621393%3A0x4c359cbc672594d4!2sJl.%20Kerinci%2C%20Limo%2C%20Kec.%20Limo%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016515!5e0!3m2!1sid!2sid!4v1650950052498!5m2!1sid!2sid" width="80%" height="50%" style="border:0; padding-top:3rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+              <p>SUPERFOODIE | PIZZA & BURGER</p>
+          </div>
+          
+          <div class="box">
+             	<h3>SEARCH SOMETHING</h3> <br>
+              	<input type="search" size="20" id="search-box" placeholder="Search here..." style="border: 1px solid; padding: 1rem; border-radius: 5px;margin-bottom: 1rem;">
+                <a href="#"><i class="fa-solid fa-house"></i> Jakarta, 10110, Indonesia</a>
+				<a href="#"><i class="fa-solid fa-square-envelope"></i> brainee.help@gmail.com</a> 
+             	<a href="#"> <i class="fas fa-phone"></i> +62 3456 7890</a>
+              	<a href="mailto:Cakeryology@gmail.com"> <i class="fas fa-envelope"></i>Cakeryology@gmail.com</a>
+          </div>    
+
+          <div class="box" style="margin-left: 3rem;">
+              <h3>QUICK LINK</h3>
+              <a href="#home"> <i class="fas fa-arrow-right"></i>Home</a>
+              <a href="#gallery"> <i class="fas fa-arrow-right"></i>product</a>
+              <a href="#about.html"> <i class="fas fa-arrow-right"></i>blogs</a>
+              <a href="about.html#review"> <i class="fas fa-arrow-right"></i>review</a>
+              <a href="#contact"> <i class="fas fa-arrow-right"></i>contact</a>
+
+          </div>
+          
+          <div class="box">
+              	<h3>OPENING HOURS</h3>
+              	<table rules="rows">
+              		<tr>
+              			<td>Mon-Thur</td>
+              			<td> :       </td>
+              			<td>8am - 9pm</td>
+              		</tr>
+              		
+
+              		<tr>
+              			<td>Fri-Sat</td>
+              			<td> :       </td>
+              			<td>8am - 1am</td>
+              		</tr>
+              		
+              		<tr>
+              			<td>Sunday</td>
+              			<td> :      </td>
+              			<td>9am - 10pm</td>
+              		</tr>
+              		
+              	</table>
+
+          </div>
+
+      </div>
+       <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-pinterest"></a>
+      </div>
+      <div class="credit">
+        ©️ 2022 Copyright: <span>09031182126008 @ Vanessa Novalia </span>
+      </div>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            alert("Thank you for purchasing! enjoy your food, hope that it will suits your sweet tooth:)");
+        });
+    });
+  </script>
+
+
+    <script  type="text/javascript" src="order.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
